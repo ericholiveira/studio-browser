@@ -1,0 +1,12 @@
+node_modules/
+target/
+tests/target/
+.grunt/
+_SpecRunner.html
+docs/
+bin/
+coverage/
+compiled/
+.idea
+.coverage
+npm-debug.log

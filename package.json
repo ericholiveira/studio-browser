@@ -1,0 +1,56 @@
+{
+  "name": "studio-browser",
+  "version": "0.0.1",
+  "description": "Plugin to access studio microservices from the browser",
+  "author": {
+    "name": "Erich Oliveira",
+    "url": "http://ericholiveira.com"
+  },
+  "keywords": [
+    "functional",
+    "programming",
+    "async",
+    "generators",
+    "micro-services",
+    "micro-service",
+    "micro",
+    "service"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericholiveira/studio-browser.git"
+  },
+  "main": "./src/index.js",
+  "dependencies": {
+    "socket.io": "^1.4.6",
+    "studio": "^0.13.1"
+  },
+  "scripts": {
+    "test": "node --harmony --harmony-proxies ./node_modules/.bin/grunt test",
+    "start": "node --harmony --harmony-proxies  ./node_modules/.bin/grunt",
+    "coverage": "node --harmony --harmony-proxies  ./node_modules/.bin/grunt coverage",
+    "prod": "node --harmony --harmony-proxies  ./node_modules/.bin/grunt prod"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "co": "^4.5.1",
+    "grunt": "0.4.x",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "0.1.13",
+    "grunt-concurrent": "1.0.0",
+    "grunt-contrib-copy": "0.8.2",
+    "grunt-contrib-jshint": "0.12.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-exec": "0.4.6",
+    "grunt-execute": "0.2.2",
+    "grunt-express-server": "0.4.19",
+    "grunt-istanbul": "^0.6.1",
+    "grunt-jasmine-node": "0.2.1",
+    "grunt-jasmine-node-coverage": "0.2.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-release": "0.13.0",
+    "mocha": "^2.3.4"
+  }
+}
