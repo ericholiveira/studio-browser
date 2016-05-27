@@ -10,3 +10,6 @@ compiled/
 .idea
 .coverage
 npm-debug.log
+browser.js
+test1.js
+index.html

@@ -1,9 +1,9 @@
 module.exports = function(namespace,Studio){
 	"use strict";
 	return function(serv){
-		var namespaceStudio = Studio.namespace(namespace);
+		var namespaceStudio = Studio.module(namespace);
     	var ref = Studio(serv.id);
-    	return namespaceStudio.service({
+    	return namespaceStudio({
     		id:serv.id,
     		fn:function(){
     			return ref.apply(ref,arguments);
