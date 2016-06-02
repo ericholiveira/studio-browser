@@ -3,6 +3,7 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-release');
 grunt.loadNpmTasks('grunt-mocha-test');
 grunt.loadNpmTasks('grunt-jsdoc');
+grunt.loadNpmTasks('grunt-jsdoc-to-markdown')
 grunt.initConfig({
 	jshint: {
 		all: ['src/**/*.js', '*.js', 'tests/**/*.js'],
@@ -35,9 +36,16 @@ grunt.initConfig({
               	configure : "node_modules/ink-docstrap/template/jsdoc.conf.json"
             }
         }
-    }
+    },
+    jsdoc2md: {
+		dist: {
+			src: 'src/*.js',
+			dest: '.documentation/README.md'
+		}
+  	}
 });
 grunt.registerTask("test", ["mochaTest:test"]);
 grunt.registerTask("all", ["jshint", "test"]);
 grunt.registerTask("default", ["all"]);
+grunt.registerTask("doc",["jsdoc","jsdoc2md"])
 grunt.registerTask("prod", ["all", "release"]);
