@@ -22,5 +22,5 @@ function browserServiceFactory(namespace,Studio){
     		}
     	});
 	};
-};
+}
 module.exports = browserServiceFactory;

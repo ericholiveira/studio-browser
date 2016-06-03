@@ -29,7 +29,7 @@
   },
   "scripts": {
     "test": "(node tests/server.js &) && (node tests/full.js &) && (sleep 4) && grunt test",
-    "prod": "node grunt prod"
+    "prod": "(node tests/server.js &) && (node tests/full.js &) && (sleep 4) && grunt prod"
   },
   "readmeFilename": "README.md",
   "devDependencies": {

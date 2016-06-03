@@ -3,7 +3,7 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-release');
 grunt.loadNpmTasks('grunt-mocha-test');
 grunt.loadNpmTasks('grunt-jsdoc');
-grunt.loadNpmTasks('grunt-jsdoc-to-markdown')
+grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
 grunt.initConfig({
 	jshint: {
 		all: ['src/**/*.js', '*.js', 'tests/**/*.js'],
@@ -44,8 +44,8 @@ grunt.initConfig({
 		}
   	}
 });
-grunt.registerTask("test", ["mochaTest:test"]);
-grunt.registerTask("all", ["jshint", "test"]);
+grunt.registerTask("test", ["jshint","mochaTest:test"]);
+grunt.registerTask("all", ["test"]);
 grunt.registerTask("default", ["all"]);
-grunt.registerTask("doc",["jsdoc","jsdoc2md"])
+grunt.registerTask("doc",["jsdoc","jsdoc2md"]);
 grunt.registerTask("prod", ["all", "release"]);

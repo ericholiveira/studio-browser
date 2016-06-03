@@ -10,7 +10,7 @@ describe('The server',function(){
 			params:[2,3]
 		});
 		socket.emit('call',data,function(result){
-			expect(result.error).to.not.exist;
+			var a = expect(result.error).to.not.exist;
 			expect(result.response).to.equal(2*3);
 			done();
 		});
@@ -22,7 +22,7 @@ describe('The server',function(){
 			params:[2,3]
 		});
 		socket.emit('call',data,function(result){
-			expect(result.response).to.not.exist;
+			var a = expect(result.response).to.not.exist;
 			expect(result.error.name).to.equal('ROUTE_NOT_FOUND');
 			done();
 		});

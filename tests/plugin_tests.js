@@ -9,7 +9,7 @@ describe('The plugin',function(){
 			params:[]
 		});
 		socket.emit('__studio_service_call',data,function(result){
-			expect(result.error).to.not.exist;
+			var a = expect(result.error).to.not.exist;
 			expect(result.response).to.equal('noargs');
 			done();
 		});
@@ -20,7 +20,7 @@ describe('The plugin',function(){
 			params:[1]
 		});
 		socket.emit('__studio_service_call',data,function(result){
-			expect(result.error).to.not.exist;
+			var a = expect(result.error).to.not.exist;
 			expect(result.response).to.equal(1);
 			done();
 		});
@@ -31,7 +31,7 @@ describe('The plugin',function(){
 			params:['a','b']
 		});
 		socket.emit('__studio_service_call',data,function(result){
-			expect(result.error).to.not.exist;
+			var a = expect(result.error).to.not.exist;
 			expect(result.response).to.equal('ab');
 			done();
 		});
@@ -42,7 +42,7 @@ describe('The plugin',function(){
 			params:[]
 		});
 		socket.emit('__studio_service_call',data,function(result){
-			expect(result.response).to.not.exist;
+			var a = expect(result.response).to.not.exist;
 			expect(result.error.message).to.equal('unexpected');
 			done();
 		});
@@ -53,7 +53,7 @@ describe('The plugin',function(){
 			params:['a','b']
 		});
 		socket.emit('__studio_service_call',data,function(result){
-			expect(result.response).to.not.exist;
+			var a = expect(result.response).to.not.exist;
 			expect(result.error.name).to.equal('ROUTE_NOT_FOUND');
 			done();
 		});
