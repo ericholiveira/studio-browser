@@ -1,6 +1,6 @@
 {
   "name": "studio-browser",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Plugin to access studio microservices from the browser",
   "author": {
     "name": "Erich Oliveira",
