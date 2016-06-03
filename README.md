@@ -13,6 +13,8 @@ To use Studio Browser you also need to add [Studio Browser Client](https://githu
 
 This plugin is really simple to use as it lets you access your server the exact same way you do on server-to-server Studio service call.
 
+Are using [Studio](https://github.com/ericholiveira/studio) or any related project. Let us know, we would love to hear your feedback.
+
 Wants to learn more???? Click here to join our slack channel 
 
 [![Join the StudioJS chat](https://studiojs.herokuapp.com/badge.svg)](https://studiojs.herokuapp.com/)
@@ -31,6 +33,7 @@ Table of contents
 - [Intro](#intro)
 - [Getting Started](#getting-started)
 - [Examples](#examples)
+- [Documentation](#documentation)
 - [Build](#build)
 - [Test](#test)
 - [License](#license)
@@ -120,6 +123,11 @@ Now you just have to run your server with node, and open your browser on http://
 Thats it... Is that simple to access your services from the browser... You dont even need to understand what is a request nor anything related.
 We just handle it to you.
 
+
+Build
+========
+
+For those interested on contributing or undenstand how the code works checkout our [documentation](https://github.com/ericholiveira/studio-browser/tree/master/.documentation) folder.
 
 Build
 ========
